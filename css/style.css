@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root{
+    --hover_color:#edaf3e;
+    --bc_main_button_color:#e99c2f;
+    --bc_secondary_button_color:#f8f9fd;
+    --heads_color:#626161;
+    --bc_color:#f8f9fd;
+    --brown_sale_bc_color:#d8924c;
+    --green_sale_bc_color:#47d93c;
+    --mkt_color:#edaf3e;
+    --paragraph_color:#afaead;
+    --sec_head_color:#998d81;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+/********************start global*****************************/
+.d_flex{
+    display: flex;
+}
+h2{
+    text-transform: capitalize;
+    color: var(--heads_color);
+}
+span{
+    color: var(--mkt_color);
+    text-transform: uppercase;
+}
+
+h3{
+    color: var(--sec_head_color);
+    font-size: 1.7rem;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+h1{
+    color: var(--heads_color);
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.main_button ,.sec_button{
+    border: none;
+    height: 60px;
+    width: 140px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.main_button{
+    background-color: var(--bc_main_button_color);
+    color: white;
+    transition: .2s;
+}
+.main_button:hover{
+    background-color: var(--heads_color);
+    color: white;
+}
+
+.sec_button{
+    background-color: var(--bc_secondary_button_color);
+    color: var(--bc_main_button_color);
+    transition: .2s;
+}
+.sec_button:hover{
+    background-color: var(--heads_color);
+    color: white;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: var(--paragraph_color);
+}
+h5{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--heads_color);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+/********************end global*******************************/
+/********************start sinemkt main style*******************/
+.sinemkt_main_section{
+    background-color: var(--bc_color);
+    padding: 10px 5%;
+    padding-bottom: 6%;
+    
+}
+.sinemkt_nav{
+    justify-content: space-between;
+   
+}
+ul li{
+    list-style: none;
+    text-transform: capitalize;
+}
+ul{
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: var(--heads_color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s;
+}
+a:hover{
+    color: var(--hover_color);
+}
+.options{
+    width: 40%;
+}
+.icons_nav{
+    justify-content: space-around;
+    width: 10%;
+    margin-top: 1.5%;
+}
+.nav_icon{
+    color: var(--heads_color);
+    cursor: pointer;
+    transition: .2s;
+}
+.nav_icon:hover{
+    color: var(--hover_color);
+}
+.prices p{
+margin-inline-start: 2%;
+}
+.prices p:nth-child(2){
+    color: var(--heads_color);
+    font-weight: 500 ;
+}
+.prices p:first-child{
+    color: var(--heads_color);
+}
+.plus{
+    background-color: transparent;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: .8rem;
+}
+.prices{
+    margin-bottom: 3%;
+}
+.great_design_collection{
+    justify-content: space-around;
+    margin-bottom: 8%;
+}
+.radio{
+    accent-color: var(--bc_main_button_color);
+   margin-inline-end: 1%;
+}
+.radio_buttons{
+    justify-content: center;
+}
+.fa-plus{
+    margin-inline-end: 7%;
+}
+/************************end sinemkt main style*********************************/ 
+/*******************start latest designed main style**************************/
+.latest_designed{
+    padding: 10px 5%;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+.content{
+    width: 25%;
+    margin: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: .4s;
+    background-color: var(--bc_color);
+    position: relative;
+}
+.latest_designed img{
+    width: 40%;
+}
+.content_stool_chair{
+    width: 45%;
+    padding-top: 2%;
+    align-items: start;
+    padding-inline-start: 2%;
+    padding-inline-end: 2%;
+}
+.content_stool_chair img{
+    width: 65%;
+    height: 65%;
+    margin-top: 6%;
+    margin-inline-end: 5%;
+}
+h6{
+    text-align: center;
+    color: var(--heads_color);
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.content_hanging_lamp h6{
+    margin-bottom: 2%;
+}
+.content_stool_chair h6{
+    text-align: start;
+    margin-bottom: 1%;
+}
+.content_hanging_lamp p ,.content_arm_chair p{
+    text-align: center;
+}
+.content_arm_chair img
+{
+    margin-top: 6%;
+}
+.content_stool_chair p{
+    text-align: start;
+}
+.sales_head{
+    font-size: .8rem;
+    margin-top: 0;
+}
+.stool_chair_paragraphs{
+    text-align: start;
+}
+.stool_chair_paragraphs button{
+   margin-top: 5%;
+   height: 30px;
+   background: transparent;
+   border: 1px solid;
+   text-transform: capitalize;
+   font-size: .8rem;
+   cursor: pointer;
+   transition: .2s;
+}
+.stool_chair_paragraphs button:hover{
+    background-color: var(--heads_color);
+    color: white;
+}
+.globe{
+    flex-direction: column;
+}
+.globe p{
+    margin-top: 0;
+    color: var(--heads_color);
+}
+/*******************end latest designed main style**************************/
+/*******************start new arrivals style**************************/
+.new_arrivals_content .content{
+    width: 22%;
+    position: relative;
+}
+.top_new_arrivals_content ,.bottom_new_arrivals_content{
+    justify-content: space-around;
+    padding: 10px 3%;
+}
+.wooden_chair_txt_group{
+    background-color: white;
+    height: 31%;
+    padding-bottom: 1%;
+}
+.wooden_chair_txt_group h6{
+    margin-bottom: 0;
+    padding-top: 5%;
+}
+.new_arrivals_content .content img{
+    width: 45%;
+    height: 60%;
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+.sale_card::before{
+    content: "sale";
+    position: absolute;
+    background-color: var(--green_sale_bc_color);
+    color: white;
+    width: 36%;
+    height: 30px;
+    left: 64%;
+    top: 3%;
+    text-align: center;
+    line-height: 30px;
+}
+.stylish_chair_content::before{
+    background-color: var(--brown_sale_bc_color);
+}
+.dinning_table_content::before{
+    background-color: var(--brown_sale_bc_color);
+}
+/*******************end new arrivals style**************************/
+/*******************start unlimited sofa collection style**************************/
+.sofa_collection{
+    background-image:url(../images/collection/sofa-collection-banner.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+.sofa_cover{
+    background-image: linear-gradient(#3b4243bb,#3b4243bb);
+    height: 100%;
+    width: 80%;
+}
+.sofa_content h5{
+    text-align: start;
+    color: white;
+    font-size: 2rem;
+    
+}
+.sofa_content p{
+    color: white;
+   width: 50%;
+}
+.sofa_content{
+    padding: 100px 12%;
+}
+/* .back_ground_color{
+    background-image: linear-gradient(#3b4243bb,#3b4243bb);
+    width: 50%;
+    height: 100%;
+} */
+/* .sofa_collection::before{
+    content:" ";
+    position: absolute;
+    background-color: #3b4243bb;
+    width: 36%;
+    height: 100%;
+    right: 64%;
+    top: 0%;
+} */
+/*******************end unlimited sofa collection style**************************/
+/*******************start featured products style**********************************/
+
+.featured_products img{
+    width: 100%;
+}
+.star_group{
+    justify-content:space-around;
+    margin-inline-end: 5%;
+}
+.featured_products_down .content{
+    background-color: white;
+}
+.featured_products_down{
+justify-content: space-around;
+}
+
+.checked{
+    color: var(--hover_color);
+}
+.un_checked{
+    color: gray;
+}
+.star_group ul li{
+    margin-inline-start:10%;
+}
+.star_group ul{
+   margin-inline-end: 15%;
+   width: 35%;
+}
+.designed_sofa h6{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+/*******************end featured products style**********************************/
+/************************start latest blog style**********************************/
+.latest_blog_down img{
+    width: 100%;
+}
+.blog_content{
+    background-color: white;
+    margin-bottom: 7%;
+}
+.latest_blog_down{
+    justify-content: space-around;
+}
+.blog_content>p:last-child{
+    color: gray;
+    text-align: start;
+}
+.blog_content h6{
+    margin-bottom: 0;
+}
+/************************end latest blog style**********************************/
+/************************start brands style**********************************/
+.brands{
+    background-color:var(--bc_color);
+}
+.brands_all{
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+/************************end brands style**********************************/
+/************************start footer style**********************************/
+
+.footer_content{
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+h4{
+    color: var(--heads_color);
+    text-transform: capitalize;
+}
+.input_email>input{
+    border: none;
+    margin-top: 10%;
+    box-shadow: 10px 10px 5px rgb(196, 194, 194);
+}
+.arrow{
+    color: var(--mkt_color);
+}
+.footer_content p{
+    text-transform: capitalize;
+}
+/************************end footer style**********************************/
+/************************start social icons style**********************************/
+.social_icons{
+    background-color: var(--bc_color);
+}
+.media_icons{
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+.top_media_icons{
+    justify-content: center;
+}
+.top_media_icons>.fa-brands{
+    margin-inline-start: 1%;
+    color: var(--paragraph_color);
+}
+.down_media p{
+    text-transform: capitalize;
+}
+.social{
+    justify-content:center;
+}
+.english_arabic>a{
+    margin-inline-end: 10%;
+}
+.submit input[type="submit"]:hover{
+    background-color: var(--heads_color);
+    color: white;
+}
+/************************end social icons style**********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1100px) {
+    :root{
+        font-size: 12px;
+    }
+    .great_design_collection{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sinemkt_main_section img{
+        width: 300px;
+    }
+    h1{
+        font-size: 2.3rem;
+    }
+    
+}
+@media (max-width:700px) {
+    :root{
+        font-size: 12px;
+    } 
+    .options{
+        width: 300px;
+    }
+    .icons_nav{
+       width: 100px;
+    }
+    .latest_designed , .brands_all , .latest_blog_down , .footer_content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .top_new_arrivals_content, .bottom_new_arrivals_content ,.sinemkt_nav{
+        flex-direction: column;
+        align-items: center;
+    } 
+    .content{
+        width: 80%;
+    }
+    .blog_content{
+        width: 70%;
+    }
+    .brands_all img{
+        margin-bottom: 8%;
+    }
+    .footer_content h4, .footer_content p{
+        font-size: 1.5rem;
+    }
+    .new_sletter{
+        text-align: center;
+    }
+    .input_email input , .arrow{
+        font-size: 1.5rem;
+    }
+    .new_arrivals_content .content {
+        width: 70%;
+        position: relative;
+    }
+}
+@media (max-width:800px) {
+    :root{
+        font-size: 12px;
+    }
+    .featured_products_down{
+        flex-direction: column;
+        align-items: center;
+    }
+    .designed_sofa{
+        width: 70%;
+    }
+    .designed_sofa h6{
+        font-size: 1.5rem;
+    }
+    .designed_sofa p{
+        font-size: 1.5rem;
+        margin-top: 2%;
+    }
+    .fa-star{
+        font-size: 1.5rem;
+    }
+}
